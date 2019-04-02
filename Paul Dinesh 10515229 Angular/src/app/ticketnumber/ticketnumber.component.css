@@ -1,0 +1,13 @@
+/*<!--Paul Dinesh 10515229-->*/
+.btn{
+  left: 50%;
+}
+body{
+  background-color: hsla(226, 72%, 72%, 0.65);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color:  hsla(0, 81%, 45%, 0.815);
+    color: black;
+  }
+}

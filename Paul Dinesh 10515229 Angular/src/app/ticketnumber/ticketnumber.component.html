@@ -1,0 +1,43 @@
+<!--Paul Dinesh 10515229-->
+<body>
+
+<h2 style="text-align:center">Select Number of Tickets</h2>
+<div style="text-align:center">
+  <button (click)="decrement_child()">-</button><b>{{child}} </b>
+    <button (click)="increment_child()">+</button>  Child Ticket @ €8.50 ==> €<b>{{child*8.50}}</b>
+
+</div>
+
+<div style="text-align:center">
+  <button (click)="decrement_adult()">-</button><b>{{adult}} </b>
+    <button (click)="increment_adult()">+</button>  Adult Ticket @ €10.50 ==> €<b>{{adult*10.50}}</b>
+
+</div>
+
+<div style="text-align:center">
+  <button (click)="decrement_student()">-</button><b>{{student}} </b>
+    <button (click)="increment_student()">+</button>  Student Ticket @ €9.50==> €<b>{{student*9.50}}</b>
+
+</div>
+<div style="text-align:center">
+  Total no. of tickets = <b>{{total}}</b>
+  <div style="text-align:center">
+  Total Cost = <b>€{{totalcost}}</b>
+  </div>
+  <input type="button" (click)="OnSubmit()" value= "Submit" class="btn btn-primary">
+<input type="button" value="Back"(click)="Back_button()" class="btn btn-primary">
+</div>
+
+
+<!--
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+<div>
+  <select [formControl]="name" formControlName="firstName" >
+              <option *ngFor="let x of n" value={{x}}> {{x}} 
+              </option>
+  </select> <span>  Adult @ €11.20    {{num}}   Value: {{ name.value }} </span> 
+</div> </form>
+-->
+
+
+</body>

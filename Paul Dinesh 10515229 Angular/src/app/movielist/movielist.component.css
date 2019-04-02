@@ -1,0 +1,16 @@
+/*<!--Paul Dinesh 10515229-->*/
+
+p {
+  font-family: Lato;
+}
+body{
+  background-color: hsla(226, 72%, 72%, 0.65);
+}
+h1{
+  background-color: hsla(66, 100%, 57%, 0.89);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+}

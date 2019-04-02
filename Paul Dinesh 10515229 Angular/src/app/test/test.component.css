@@ -1,0 +1,160 @@
+/* Author: Uzair Ahmed */
+/* CSS Helpers */
+.font14 {
+    font-size: 14px;
+}
+.font16 {
+    font-size: 16px;
+}
+.marginTop5 {
+    margin-top: 5px;
+}
+.marginTB10 {
+    margin: 10px 0px;
+}
+.wordWrap {
+    word-break: break-all;
+}
+/* End CSS Helpers */
+
+.innerContainer {
+    color: #fff;
+    text-align: center;
+}
+.movie {
+    margin: -10px -5px 10px -5px;
+    height: 70px;
+    background: hsla(216, 81%, 53%, 0.65);   
+}
+.movieDetails {
+    font-size: 15px;
+    margin-top: -3px;
+}
+.movieTitle {
+    font-size: 20px;
+    padding-top: 10px;
+    margin-top: -3px;
+}
+.seat {
+    padding-right: 5px;
+}
+
+.legend {
+    font-size: 14px;
+}
+.legend > .padding-left {
+    padding-left: 15px;
+}
+.screen {
+    background: hsla(216, 72%, 50%, 0.65);
+    height: 3px;
+    border-radius: 15px;
+    margin: -5px 50px 10px;
+    box-shadow: 0px 3px 6px #fff;
+}
+.reservedSeat {
+    color: #ce4844;
+}
+.selectedSeat {
+    color: #5cb85c;
+}
+.freeSeat {
+    color: #fff;
+}
+
+
+
+
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    margin: 10px;
+	line-height: 1;
+    font-family: Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom */
+div.legends {
+  font-family: Arial;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #666;
+}
+
+div.methods{
+    margin: 10px 0;
+}
+
+div.row {
+  line-height: 25px;
+}
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  font-size: 50px;
+  display: inline-block;
+  margin: 0 1px;
+ 
+}
+
+input[type=checkbox] + label:before { 
+  content: "\f111"; 
+  color: #ddd; 
+  cursor: pointer; 
+}
+
+input[type=checkbox]:checked + label:before { 
+  content: "\f111"; 
+  color: #2980b9; 
+}
+
+input[type=checkbox]:disabled[data-status=booked] + label:before{
+  content: "\f111";
+  color: #27ae60;
+}
+
+input[type=checkbox]:disabled[data-status=notavailable] + label:before{
+  content: "\f111";
+  color: #999;
+}

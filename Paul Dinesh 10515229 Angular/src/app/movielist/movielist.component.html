@@ -1,0 +1,55 @@
+<!--Paul Dinesh 10515229-->
+<h1 style="text-align:center">List of Movies<h5><button (click)="toggleCollapse()" class="btn-link" >Expand/Collapse All </button></h5></h1>
+<body bgcolor="black">
+
+<table align="center" >
+  <tr>      
+    <td class="list-group-item" *ngFor="let movie of movieListing" >
+  <tr>
+    <h4><b>{{movie.title}}</b></h4>   <span class="badge  badge-secondary">{{movie.year}}</span>
+    <td></td>
+  </tr>
+<div *ngIf="!isCollapsed">
+  <tr>
+    <td class="director"><b>Director:</b> {{movie.director}} 
+    </td>
+    <td><b>Monday </b><button type="button" class="btn-link" *ngFor="let x of movie.runningTimes.mon" (click)="selected(movie.title,x,'Monday');Onclickbutton()" > {{ x }}</button> 
+    </td>
+  </tr>
+  <tr>
+    <td class="genre"><b>Genre:</b> {{movie.genre}}
+    </td>
+    <td><b>Tuesday </b><button type="button" class="btn-link"  *ngFor="let x of movie.runningTimes.tue" (click)="selected(movie.title,x,'Tuesday');Onclickbutton()">{{ x }}</button> 
+    </td>
+  </tr>
+  <tr>
+    <td class="notes" width="600"><b>Notes:</b> {{movie.notes}}
+    </td>
+    <td ><b>Wednesday</b><button type="button" class="btn-link"  *ngFor="let x of movie.runningTimes.wed" (click)="selected(movie.title,x,'Wednesday');Onclickbutton()">  {{ x }}</button>  
+    </td>
+  </tr>
+  <tr>
+    <td class="cast" width="600"><b>Cast:</b>  {{movie.cast}}
+    </td>
+    <td > <b>Thursday</b><button type="button" class="btn-link"   *ngFor="let x of movie.runningTimes.thu" (click)="selected(movie.title,x,'Thursday');Onclickbutton()"> {{ x }}</button>  
+    </td>
+  </tr>
+    <td>
+    </td>
+    <td><b>Friday</b><button type="button" class="btn-link"  *ngFor="let x of movie.runningTimes.fri" (click)="selected(movie.title,x,'Friday');Onclickbutton()">  {{ x }}</button>  
+    </td>
+<tr>
+    <td>
+    </td>
+    <td > <b>Saturday</b><button type="button" class="btn-link" *ngFor="let x of movie.runningTimes.sat" (click)="selected(movie.title,x,'Saturday');Onclickbutton()"> {{ x }}</button>  
+    </td>
+    <tr>
+    <td>
+    </td>
+    <td > <b>Sunday</b><button type="button" class="btn-link" *ngFor="let x of movie.runningTimes.sun" (click)="selected(movie.title,x,'Sunday');Onclickbutton()"> {{ x }}</button>  
+    </td>
+</div>
+  </tr>
+    
+</table>
+</body>
